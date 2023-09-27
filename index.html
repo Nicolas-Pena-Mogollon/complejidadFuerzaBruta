@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheets -->
+    <link rel="icon" href="data:image/x-icon;,">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/menu.css">
+    <link rel="stylesheet" href="../static/css/display/display.css">
+    <link rel="stylesheet" href="../static/css/display/display-section.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>KMP</title>
+</head>
+
+<body>
+    <div class="all">
+        <!-- Menu section  -->
+        <section class="menu">
+            <header class="menu__header">
+                KMP
+            </header>
+        </section>
+
+        <!-- Display section -->
+        <section class="display">
+            <div class="display__container">
+                <form class="inputform__form" name="form">
+                    <div class="input__container" id="input__file__container">
+                        <label class="file__input__label" for="file">Seleccione el archivo del cual quiere buscar
+                            subcadenas de texto (solo se permiten.txt)</label>
+                        <input class="file__input" id="file__input" type="file" name="file">
+                        <span class="input__message__error">Este campo no es valido</span>
+                    </div>
+                    <p>Contenido del archivo:</p>
+                    <div class="textarea__container">
+                        <div class="display__textarea" id="display__textarea"></div>
+                    </div>
+                    <div>
+                        <label class="display__check__label" for="check-case">Sensibilidad a mayúsculas y
+                            minúsculas</label>
+                        <input type="checkbox" name="check-case">
+                    </div>
+                    <div class="displayform__input__container">
+                        <div class="input__container">
+                            <input class="display__input" id="input__search" type="text" name="text_value"
+                                placeholder="Ingrese el texto" required data-tipo="text_value">
+                            <label class="display__input__label" for="text_value">Ingrese el texto</label>
+                            <span class="input__message__error">Este campo no es valido</span>
+                        </div>
+                        <button onclick="search(event)" class="search__button">Buscar</button>
+                    </div>
+                </form>
+                <span id="result__text"></span>
+            </div>
+        </section>
+
+        <!-- Sección de Footer -->
+        <section class="footer">
+            <div class="footer__rodape">
+                <p>Desarrollado por:</p>
+                <p>Nicolás Peña Mogollón</p>
+                <p>María Camila Lozano Gutiérrez</p>
+                <p>David Esteban López Castillo</p>
+                <p>2023</p>
+            </div>
+        </section>
+    </div>
+    <!-- Script del documento JavaScript -->
+    <script src="./controllers/js/index.js" type="module"></script>
+</body>
+
+</html>

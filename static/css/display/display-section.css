@@ -1,0 +1,81 @@
+.display__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 88vw;
+}
+
+#input__file__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputform__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.displayform__input__container {
+    width: 75vw;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+::placeholder {
+    color: var(--cor-de-fundo2);
+}
+
+:focus {
+    outline: none;
+}
+
+button {
+    background-color: var(--cor-de-fundo1);
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    width: 20vw;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #cfdcdc;
+}
+
+button:active {
+    background-color: var(--cor-de-fundo1);
+    font-size: 18px;
+}
+
+/*Mobile*/
+@media (max-width: 700px) {
+    .display__container {
+        width: 88vw;
+    }
+
+    .displayform__input__container {
+        width: 88vw;
+        flex-wrap: wrap;
+    }
+
+    .input__container {
+        width: 88vw;
+    }
+
+    .display__input {
+        width: 87vw;
+    }
+
+    button {
+        width: 87vw;
+    }
+}
