@@ -1,3 +1,4 @@
+/* Estilos generales de la etiqueta de entrada */
 .display__input__label {
     position: absolute;
     top: 1.375rem;
@@ -7,6 +8,7 @@
     transition: all 0.25s;
 }
 
+/* Estilos cuando la entrada no está en modo de marcador de posición y no está enfocada, o cuando está enfocada */
 .display__input:not(:placeholder-shown)+.display__input__label,
 .display__input:focus+.display__input__label {
     font-size: 0.875rem;
@@ -15,10 +17,12 @@
     transition: all 0.25s;
 }
 
+/* Estilos cuando la entrada no está en modo de marcador de posición y no está enfocada, sin etiqueta adicional */
 .display__input:not(:placeholder-shown).display__input:not(:focus)+.contactform__input__label {
     color: var(--cor-de-texto);
 }
 
+/* Estilos cuando el contenedor de entrada es inválido */
 .input__container__invalid .display__input__label {
     color: var(--warning-color);
 }

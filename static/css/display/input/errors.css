@@ -1,7 +1,10 @@
+
+/* Estilos generales del mensaje de error */
 .input__message__error {
     display: none;
 }
 
+/* Estilos específicos cuando el contenedor de entrada es inválido */
 .input__container__invalid .input__message__error {
     color: var(--warning-color);
     display: block;

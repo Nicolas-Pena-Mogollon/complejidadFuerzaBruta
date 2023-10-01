@@ -1,3 +1,6 @@
+/**
+ * Estilos para el encabezado de la sección del menú.
+ */
 .menu__header {
     font-size: 3.5em;
     font-weight: bold;
@@ -5,7 +8,8 @@
 
 }
 
-/*Mobile*/
+/* Estilos para un ancho máximo de 360px */
+
 @media (max-width: 360px) {
     .menu__header {
         font-size: 2.5em;

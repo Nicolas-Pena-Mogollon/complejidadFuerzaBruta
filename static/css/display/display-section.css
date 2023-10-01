@@ -1,3 +1,5 @@
+
+/* Contenedor principal de la sección de visualización */
 .display__container {
     display: flex;
     flex-direction: column;
@@ -7,22 +9,26 @@
     width: 88vw;
 }
 
+/* Contenedor para el input de archivo */
 #input__file__container{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Contenedor para el área de texto */
 .textarea__container {
     position: relative;
 }
 
+/* Formulario principal */
 .inputform__form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Contenedor para el input y el botón de búsqueda */
 .displayform__input__container {
     width: 75vw;
     position: relative;
@@ -32,7 +38,7 @@
     gap: 1vw;
 }
 
-/*Mobile*/
+/* Estilos para un ancho máximo de 700px */
 @media (max-width: 700px) {
     .display__container {
         width: 88vw;

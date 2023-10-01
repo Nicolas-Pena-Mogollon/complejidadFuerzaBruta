@@ -1,3 +1,5 @@
+
+/* Estilos generales del área de texto */
 .display__textarea {
     font-size: 1.1em;
     resize: none;
@@ -13,7 +15,7 @@
     color: black;
 }
 
-/*Mobile*/
+/* Estilos para un ancho máximo de 700px */
 @media (max-width: 700px) {
     .display__textarea {
         width: 80vw;

@@ -1,3 +1,10 @@
+
+/**
+ * Calcula y retorna un array de prefijos para el algoritmo KMP.
+ * @param {string} substring - Subcadena para la cual se calculará el array de prefijos.
+ * @returns {number[]} - Array de prefijos.
+ */
+
 function calcularPrefixArray(substring) {
   const prefixArray = [0];
   let len = 0; // Longitud del prefijo actual
@@ -21,7 +28,13 @@ function calcularPrefixArray(substring) {
   return prefixArray;
 }
 
-
+/**
+ * Encuentra todas las ocurrencias de una subcadena en un texto utilizando el algoritmo KMP.
+ *
+ * @param {string} text - Texto en el que se buscarán las ocurrencias.
+ * @param {string} substring - Subcadena que se buscará en el texto.
+ * @returns {number[]} - Array de índices de inicio de las ocurrencias.
+ */
 export function findSubstringKMP(text, substring) {
   const prefixArray = calcularPrefixArray(substring);
   const occurrences = [];
@@ -49,6 +62,14 @@ export function findSubstringKMP(text, substring) {
   return occurrences;
 }
 
+/**
+ * Subraya las ocurrencias de una subcadena en un texto con.
+ *
+ * @param {string} text - Texto original.
+ * @param {number[]} occurrences - Array de índices de inicio de las ocurrencias.
+ * @param {string} substring - Subcadena que se subrayará en el texto.
+ * @returns {string} - Texto con las ocurrencias subrayadas
+ */
 export function underlineText(text, occurrences, substring) {
   let resultText = "";
   let start = 0;
