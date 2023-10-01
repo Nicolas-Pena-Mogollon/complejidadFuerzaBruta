@@ -1,3 +1,6 @@
+/**
+ * Estilos para la sección de pie de página (footer).
+ */
 .footer__rodape {
     display: flex;
     flex-direction: column;

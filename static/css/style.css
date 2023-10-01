@@ -1,3 +1,7 @@
+/**
+ * Definición de variables personalizadas y estilos generales.
+ */
+
 :root {
     --cor-de-fundo1: white;
     --cor-de-fundo2: #1f1f1f;
@@ -8,6 +12,8 @@
     --warning-color: red;
 }
 
+/* Estilos generales del cuerpo del documento */
+
 body {
     box-sizing: border-box;
     font-family: 'Raleway';
@@ -15,21 +21,24 @@ body {
     line-height: 1;
 }
 
+/* Estilos para enlaces */
 a {
     text-decoration: none;
     color: var(--cor-de-link);
 }
 
+
+/* Estilos para el texto de marcador de posición */
 ::placeholder {
     color: var(--cor-de-fundo2);
 }
 
+/* Estilos para el foco (elimina el contorno por defecto) */
 :focus {
     outline: none;
 }
 
 /*Sección Menu*/
-
 section.menu {
     padding-top: 2vw;
     padding-bottom: 2vw;
@@ -38,7 +47,6 @@ section.menu {
 }
 
 /*Sección Title*/
-
 section.display {
     padding: 4vw 5vw 4vw 5vw;
     display: flex;
@@ -47,12 +55,14 @@ section.display {
     color: var(--cor-de-texto1);
 }
 
+
+/* Sección de pie de página */
 section.footer {
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
 
-/*Mobile*/
+/* Estilos para un ancho máximo de 700px */
 @media (max-width: 700px) {
     section.display {
         flex-direction: column;
