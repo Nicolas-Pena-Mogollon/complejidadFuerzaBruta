@@ -1,0 +1,39 @@
+.file__input {
+    padding-left: 5px;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-size: 0.875rem;
+    width: 80vw;
+}
+
+.display__input {
+    color: var(--cor-de-fundo2);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    height: 3.25rem;
+    width: 55vw;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.display__input::placeholder {
+    color: var(--cor-de-fundo2);
+    visibility: hidden;
+}
+
+.display__input:focus {
+    outline: none;
+}
+
+.input__container__invalid .display__input {
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    border-radius: 7px;
+}
+
+/*Mobile*/
+@media (max-width: 700px) {
+    .display__input {
+        width: 87vw;
+    }
+}

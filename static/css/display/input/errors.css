@@ -1,0 +1,10 @@
+.input__message__error {
+    display: none;
+}
+
+.input__container__invalid .input__message__error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}

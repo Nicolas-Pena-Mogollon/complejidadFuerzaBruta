@@ -20,6 +20,14 @@ a {
     color: var(--cor-de-link);
 }
 
+::placeholder {
+    color: var(--cor-de-fundo2);
+}
+
+:focus {
+    outline: none;
+}
+
 /*Sección Menu*/
 
 section.menu {

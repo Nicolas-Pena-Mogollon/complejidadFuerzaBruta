@@ -1,0 +1,21 @@
+.display__textarea {
+    font-size: 1.1em;
+    resize: none;
+    line-height: 1.4;
+    background-color: var(--cor-de-fundo1);
+    border-radius: 15px;
+    padding: 15px;
+    height: 40vh;
+    width: 75vw;
+    overflow-wrap: break-word;
+    overflow: auto;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+/*Mobile*/
+@media (max-width: 700px) {
+    .display__textarea {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,24 @@
+.display__input__label {
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: var(--font-size-input-label);
+    color: black;
+    transition: all 0.25s;
+}
+
+.display__input:not(:placeholder-shown)+.display__input__label,
+.display__input:focus+.display__input__label {
+    font-size: 0.875rem;
+    top: 0.25rem;
+    color: var(--cor-de-btn);
+    transition: all 0.25s;
+}
+
+.display__input:not(:placeholder-shown).display__input:not(:focus)+.contactform__input__label {
+    color: var(--cor-de-texto);
+}
+
+.input__container__invalid .display__input__label {
+    color: var(--warning-color);
+}
