@@ -9,6 +9,8 @@
 
 /* Estilos para el input de texto */
 .display__input {
+    padding: 5px 10px 0 10px;
+
     color: var(--cor-de-fundo2);
     box-sizing: border-box;
     border-radius: 10px;

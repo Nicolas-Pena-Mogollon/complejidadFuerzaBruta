@@ -5,7 +5,7 @@ import { findSubstringKMP, underlineText } from "../kmp/process.js";
 
 //Obtiene los datos de los elementos del html
 const fileInput = document.querySelector("#file__input");
-const inputSearch = document.querySelector("#input__search");
+const inputSearch = document.querySelector("#text_value");
 const contentDiv = document.querySelector('#display__textarea');
 const spanDefaultError = document.querySelector("#span_general__error");
 const contentDivCount = document.querySelector('#count_words');
