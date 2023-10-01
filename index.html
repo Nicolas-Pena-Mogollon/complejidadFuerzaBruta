@@ -41,9 +41,9 @@
                 <form class="inputform__form" name="form">
                     <!-- File Chooser -->
                     <div class="input__container" id="input__file__container">
-                        <label class="file__input__label" for="file">Seleccione el archivo del cual quiere buscar
+                        <label class="file__input__label" for="file__input">Seleccione el archivo del cual quiere buscar
                             subcadenas de texto (solo se permiten.txt)</label>
-                        <input class="file__input" id="file__input" type="file" name="file">
+                        <input class="file__input" id="file__input" type="file" name="file__input">
                         <span class="input__message__error">Este campo no es valido</span>
                     </div>
                     <p>Contenido del archivo:</p>
@@ -53,16 +53,16 @@
                     </div>
                     <!-- Check button -->
                     <div>
-                        <label class="display__check__label" for="check-case">Sensibilidad a mayúsculas y
+                        <label class="display__check__label"  for="check__input">Sensibilidad a mayúsculas y
                             minúsculas</label>
-                        <input id="check__input" type="checkbox" name="check-case">
+                        <input id="check__input" type="checkbox" name="check__input">
                     </div>
                     <!-- Substring button -->
                     <div class="displayform__input__container">
                         <div class="input__container">
-                            <input class="display__input" id="input__search" type="text" name="text_value"
-                                placeholder="Ingrese el texto" required data-tipo="text_value">
                             <label class="display__input__label" for="text_value">Ingrese el texto</label>
+                            <input class="display__input" id="text_value" type="text" name="text_value"
+                                placeholder="Ingrese el texto" required data-tipo="text_value">
                             <span class="input__message__error">Este campo no es valido</span>
                         </div>
                         <button class="search__button" id="search__button">Buscar</button>
